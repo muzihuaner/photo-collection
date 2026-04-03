@@ -45,16 +45,6 @@ npm run dev
 
 默认会同时启动 Vite 前端和 `server.ts`，访问 `http://localhost:3000` 预览效果。
 
-
-
-## Docker Compose 部署
-
-1. **准备环境变量**：复制 `.env.example` 为 `.env`，填写 S3 与静态资源相关配置。
-2. **构建并启动**：执行 `docker compose up -d --build`，Compose 会使用 `Dockerfile` 进行构建。
-3. **访问服务**：浏览器打开 `http://localhost:3000`，即可访问容器内运行的应用。
-4. **停止服务**：运行 `docker compose down` 以停止并清理容器。
-
-
 ## 可用脚本
 
 | 命令 | 描述 |
@@ -64,9 +54,12 @@ npm run dev
 | `npm run preview` | 本地预览打包结果 |
 
 
-## 贡献
+## Docker Compose 部署
 
-欢迎提交 Issue 或 Pull Request 改进项目，如遇问题可通过 `/reportbug` 命令反馈。
+1. **准备环境变量**：复制 `.env.example` 为 `.env`，填写 S3 与静态资源相关配置。
+2. **构建并启动**：执行 `docker compose up -d --build`，Compose 会使用 `Dockerfile` 进行构建。
+3. **访问服务**：浏览器打开 `http://localhost:3000`，即可访问容器内运行的应用。
+4. **停止服务**：运行 `docker compose down` 以停止并清理容器。
 
 ## 许可证
 
