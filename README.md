@@ -47,6 +47,14 @@ npm run dev
 
 
 
+## Docker Compose 部署
+
+1. **准备环境变量**：复制 `.env.example` 为 `.env`，填写 S3 与静态资源相关配置。
+2. **构建并启动**：执行 `docker compose up -d --build`，Compose 会使用 `Dockerfile` 进行构建。
+3. **访问服务**：浏览器打开 `http://localhost:3000`，即可访问容器内运行的应用。
+4. **停止服务**：运行 `docker compose down` 以停止并清理容器。
+
+
 ## 可用脚本
 
 | 命令 | 描述 |
@@ -54,23 +62,6 @@ npm run dev
 | `npm run dev` | 启动本地开发（含 API） |
 | `npm run build` | 产出生产构建（生成 `dist/`） |
 | `npm run preview` | 本地预览打包结果 |
-
-## 部署指南
-
-### Vercel
-
-1. 在 Vercel 中导入仓库，维持默认 `npm run build` 构建命令。
-2. 在 Settings → Environment Variables 中添加：
-   - `S3_BUCKET_NAME`
-   - `S3_REGION`
-   - `S3_ACCESS_KEY_ID`
-   - `S3_SECRET_ACCESS_KEY`
-   - `S3_ENDPOINT`
-   - `S3_FORCE_PATH_STYLE`（根据需要设 `true/false`）
-   - `S3_IMAGE_BASE_URL`
-   - `S3_IMAGE_DIR`
-
-
 
 
 ## 贡献
