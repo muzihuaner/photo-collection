@@ -15,6 +15,6 @@ RUN npm run build
 
 ENV NODE_ENV=production
 
-EXPOSE 6666
+EXPOSE 3000
 
 CMD ["npx", "tsx", "server.ts"]
