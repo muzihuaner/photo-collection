@@ -34,6 +34,15 @@ S3_FORCE_PATH_STYLE=false
 S3_IMAGE_BASE_URL=
 S3_IMAGE_DIR=
 ```
+备注：
+S3_BUCKET_NAME 为 S3 存储桶名称，
+S3_REGION 为 S3 区域，
+S3_ACCESS_KEY_ID 为访问密钥 ID，
+S3_SECRET_ACCESS_KEY 为密密钥，
+S3_ENDPOINT 为 S3 端点，
+S3_FORCE_PATH_STYLE 为是否强制路径样式，
+S3_IMAGE_BASE_URL 为图片基础 URL，
+S3_IMAGE_DIR 为图片目录。
 
 如暂未配置，默认使用 mock 数据进行演示。
 
