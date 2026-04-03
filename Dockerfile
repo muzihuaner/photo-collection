@@ -8,7 +8,7 @@ COPY package*.json ./
 RUN npm install --legacy-peer-deps
 
 # 拷贝剩余源码并构建前端
-COPY tsconfig.json vite.config.ts server.ts ./
+COPY tsconfig.json vite.config.ts server.ts index.html ./
 COPY src ./src
 
 RUN npm run build
